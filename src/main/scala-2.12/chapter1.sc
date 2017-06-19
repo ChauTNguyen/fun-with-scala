@@ -93,3 +93,4 @@ def greaterThanInt(x: Int, y: Int): Boolean = x > y
 isSorted(Array(2, 3), greaterThanInt)
 isSorted(Array(3, 2), greaterThanInt)
 
+def partial1[A,B,C](a: A, f: (A,B) => C): B => C = f(a, _)
